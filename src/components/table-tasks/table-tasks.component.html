@@ -1,0 +1,14 @@
+<div class="table-wrapper">
+  <ag-grid-angular
+    class="ag-theme-alpine-dark"
+    [theme]="theme"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [pagination]="true"
+    [paginationPageSize]="10"
+    (rowClicked)="onRowClicked($event.data)"
+    (gridReady)="onGridReady($event)"
+    domLayout="autoHeight"
+    [context]="{ componentParent: this }"
+  ></ag-grid-angular>
+</div>

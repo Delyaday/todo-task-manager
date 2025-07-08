@@ -1,0 +1,44 @@
+<p-drawer
+  [visible]="visible"
+  (onHide)="close.emit()"
+  [modal]="true"
+  [dismissible]="true"
+  header="Add Task"
+  position="right"
+>
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="add-task-form">
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="title">Title</label>
+      <input id="title" type="text" formControlName="title" pInputText />
+      <small
+        *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched"
+        class="p-error"
+      >
+        Title is required.
+      </small>
+    </div>
+
+    <div class="p-field" style="margin-top: 2rem;">
+      <label for="description">Description</label>
+      <input
+        id="description"
+        type="text"
+        pSize="large"
+        formControlName="description"
+        pInputText
+      />
+    </div>
+
+    <div class="button-wrapper">
+      <button
+        type="submit"
+        pButton
+        label="Add Task"
+        [disabled]="taskForm.invalid"
+        class="p-button-success"
+      ></button>
+    </div>
+  </div>
+</form>
+</p-drawer>

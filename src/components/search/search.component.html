@@ -1,0 +1,14 @@
+<div class="search-container">
+  <span class="search-icon">
+    <i class="pi pi-search"></i>
+  </span>
+
+  <input
+    #inputRef
+    type="text"
+    class="custom-search-input"
+    [value]="query"
+    (input)="onInputChange(inputRef.value)"
+    placeholder="Search..."
+  />
+</div>

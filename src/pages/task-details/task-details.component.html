@@ -1,0 +1,53 @@
+<div class="task-details-container">
+  <h2>Edit Task</h2>
+
+  <p-toast></p-toast>
+
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div class="p-field">
+      <label for="title">Title</label>
+      <input id="title" type="text" formControlName="title" pInputText />
+      <small
+        *ngIf="taskForm?.get('title')?.invalid && taskForm?.get('title')?.touched"
+        class="p-error"
+      >
+        Title is required.
+      </small>
+    </div>
+
+    <div class="p-field">
+      <label for="description">Description</label>
+      <input
+        id="description"
+        type="text"
+        formControlName="description"
+        pInputText
+      />
+    </div>
+
+    <div class="p-field">
+      <label for="completed">Completed</label>
+      <p-checkbox
+        inputId="completed"
+        formControlName="completed"
+        binary="true"
+      ></p-checkbox>
+    </div>
+
+    <div class="form-actions">
+      <button
+        pButton
+        label="Save"
+        type="submit"
+        [disabled]="taskForm.invalid"
+      ></button>
+      <button
+        pButton
+        label="Cancel"
+        class="p-button-secondary"
+        type="button"
+        (click)="onCancel()"
+      ></button>
+    </div>
+  </form>
+</div>

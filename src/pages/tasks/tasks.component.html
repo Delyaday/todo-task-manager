@@ -1,0 +1,28 @@
+<div class="tasks-container">
+  <h1 class="title">To Do List</h1>
+
+  <search-component
+    class="search-bar"
+    [query]="searchQuery"
+    (searchQueryChange)="search($event)"
+  ></search-component>
+
+  <div class="add-task-btn-container">
+    <p-button
+      label="Add Task"
+      icon="pi pi-plus"
+      (click)="onOpenAddTaskModal()"
+    />
+  </div>
+
+  <add-task-drawer
+    [visible]="isAddTaskModalOpen"
+    (close)="onCloseAddTaskModal()"
+  ></add-task-drawer>
+
+  <table-tasks-component
+    class="tasks-table"
+    [rowData]="searchQuery ? searchResults : tasks"
+    (rowClick)="onRowClick($event)"
+  ></table-tasks-component>
+</div>
