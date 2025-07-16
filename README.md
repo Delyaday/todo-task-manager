@@ -59,4 +59,8 @@ Open your browser at (http://localhost:4200)
 Built by Adelya (https://github.com/delyaday) as a showcase Angular project.
 
 
+## Project Screenshots
 
+![Main Page](src/screenshots/38.jpg)
+![Add Task Form](src/screenshots/01.jpg)
+![Debounce Searching](src/screenshots/03.jpg)
