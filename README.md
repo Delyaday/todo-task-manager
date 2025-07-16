@@ -37,6 +37,12 @@ Built with **Angular**, **RxJS**, and **PrimeNG**, featuring:
 
 ---
 
+## Project Screenshots
+
+<img src="src/screenshots/38.jpg" alt="Main Page" width="600"/>
+<img src="src/screenshots/01.jpg" alt="Add Task Form" width="600"/>
+<img src="src/screenshots/03.jpg" alt="Debounce Searching" width="600"/>
+
 ## 🛠️ Getting Started
 
 ### 1. Clone the repo
@@ -57,6 +63,4 @@ Open your browser at (http://localhost:4200)
 ## 🧑‍💻 Author
 
 Built by Adelya (https://github.com/delyaday) as a showcase Angular project.
-
-
-
+---
