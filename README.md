@@ -57,7 +57,7 @@ Open your browser at (http://localhost:4200)
 ## 🧑‍💻 Author
 
 Built by Adelya (https://github.com/delyaday) as a showcase Angular project.
-
+---
 
 ## Project Screenshots
 
