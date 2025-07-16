@@ -61,6 +61,6 @@ Built by Adelya (https://github.com/delyaday) as a showcase Angular project.
 
 ## Project Screenshots
 
-![Main Page](src/screenshots/38.jpg)
-![Add Task Form](src/screenshots/01.jpg)
-![Debounce Searching](src/screenshots/03.jpg)
+<img src="src/screenshots/38.jpg" alt="Main Page" width="600"/>
+<img src="src/screenshots/01.jpg" alt="Add Task Form" width="600"/>
+<img src="src/screenshots/03.jpg" alt="Debounce Searching" width="600"/>
